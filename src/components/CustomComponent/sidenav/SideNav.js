@@ -1,25 +1,25 @@
 import { Grid, Typography } from "@mui/material";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Filter from "../../../assets/images/Filter.png";
 import "./SideNav.css";
 import Checkbox from "@mui/material/Checkbox";
 import { FarmFilter } from "../../../contexts/farmfilter/FarmFilter";
 
-function SideNav(props) {
+function SideNav() {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-  const { data, updateValue, deleteValue } = useContext(FarmFilter);
-  const [state, setState] = useState({
-    Dairy: false,
-    Poultry: false,
-    SeaFood: false,
-    Vegetables: false,
-    FreshFruits: false,
-    Flowers: false,
-  });
+  const { updateValue, deleteValue, state, setState } = useContext(FarmFilter);
+  // const [state, setState] = useState({
+  //   Dairy: true,
+  //   Poultry: false,
+  //   SeaFood: false,
+  //   Vegetables: false,
+  //   FreshFruits: false,
+  //   Flowers: false,
+  // });
 
   const handleChange = (event) => {
-    console.log(event.target.checked);
+    console.log(event.target.value);
     if (event.target.checked) {
       setState({
         ...state,
@@ -34,16 +34,17 @@ function SideNav(props) {
       deleteValue(event.target.name);
     }
   };
-  let v = props.name;
-  useEffect(() => {
-    if (props.name) {
-      setState({
-        ...state,
-        [props.name]: state[v] ? false : true,
-      });
-      v = "";
-    }
-  }, [props]);
+
+  // let v = props.name;
+  // useEffect(() => {
+  //   if (props.name) {
+  //     setState({
+  //       ...state,
+  //       [props.name]: state[v] ? false : true,
+  //     });
+  //     v = "";
+  //   }
+  // }, [props]);
   // console.log(state);
 
   return (
@@ -55,10 +56,15 @@ function SideNav(props) {
         <img src={Filter} alt="Filter" />
       </Grid>
       <Grid container className="labelCheckbox">
-        <Typography variant="p" className="labelText">
+        <Typography
+          data-testId="checkboxLabel"
+          variant="p"
+          className="labelText"
+        >
           Dairy
         </Typography>
         <Checkbox
+          data-testId="confirm_checkbox"
           {...label}
           checked={state.Dairy}
           color="success"
@@ -67,10 +73,15 @@ function SideNav(props) {
         />
       </Grid>
       <Grid container className="labelCheckbox">
-        <Typography variant="p" className="labelText">
+        <Typography
+          data-testId="checkboxLabel"
+          variant="p"
+          className="labelText"
+        >
           Poultry
         </Typography>
         <Checkbox
+          data-testId="confirm_checkbox"
           {...label}
           checked={state.Poultry}
           color="success"
@@ -79,10 +90,15 @@ function SideNav(props) {
         />
       </Grid>
       <Grid container className="labelCheckbox">
-        <Typography variant="p" className="labelText">
+        <Typography
+          data-testId="checkboxLabel"
+          variant="p"
+          className="labelText"
+        >
           Sea Food
         </Typography>
         <Checkbox
+          data-testId="confirm_checkbox"
           {...label}
           checked={state.SeaFood}
           color="success"
@@ -91,10 +107,15 @@ function SideNav(props) {
         />
       </Grid>
       <Grid container className="labelCheckbox">
-        <Typography variant="p" className="labelText">
+        <Typography
+          data-testId="checkboxLabel"
+          variant="p"
+          className="labelText"
+        >
           Vegetables
         </Typography>
         <Checkbox
+          data-testId="confirm_checkbox"
           {...label}
           checked={state.Vegetables}
           color="success"
@@ -103,10 +124,15 @@ function SideNav(props) {
         />
       </Grid>
       <Grid container className="labelCheckbox">
-        <Typography variant="p" className="labelText">
+        <Typography
+          data-testId="checkboxLabel"
+          variant="p"
+          className="labelText"
+        >
           Fresh Fruits
         </Typography>
         <Checkbox
+          data-testId="confirm_checkbox"
           {...label}
           checked={state.FreshFruits}
           color="success"
@@ -115,10 +141,15 @@ function SideNav(props) {
         />
       </Grid>
       <Grid container className="labelCheckbox">
-        <Typography variant="p" className="labelText">
+        <Typography
+          data-testId="checkboxLabel"
+          variant="p"
+          className="labelText"
+        >
           Flowers
         </Typography>
         <Checkbox
+          data-testId="confirm_checkbox"
           {...label}
           checked={state.Flowers}
           color="success"

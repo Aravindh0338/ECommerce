@@ -1,0 +1,15 @@
+.categoryWrapper{
+    width: 92%;
+    margin:90px auto 0 auto;
+}
+.categoriesData{
+    display: flex;
+    margin: 50px auto 50px auto;
+}
+
+
+@media screen and (max-width: 900px)  {
+    .categoriesData{
+        justify-content: center;
+    }
+}

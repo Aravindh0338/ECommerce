@@ -9,7 +9,15 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer>
-      <Grid container xs={12} sm={12} md={12} rowGap={3} className="footer">
+      <Grid
+        data-testId="footer"
+        container
+        xs={12}
+        sm={12}
+        md={12}
+        rowGap={3}
+        className="footer"
+      >
         <Grid sm={3} md={2}>
           <img src={Logo} className="footerLogo" alt="logo" />
           <br />
@@ -40,10 +48,12 @@ function Footer() {
           <Typography className="footersubHeading">Terms&Condition</Typography>
         </Grid>
         <Grid sm={4} md={4} container flexDirection="column" rowGap={1}>
-          <Typography className="footersubHeading">
+          <Typography data-TestId="login" className="footersubHeading">
             Login to your account
           </Typography>
-          <Typography className="footersubHeading">Register with Us</Typography>
+          <Typography data-testId="register" className="footersubHeading">
+            Register with Us
+          </Typography>
           <Grid container justifyContent="flex-start" columnGap={2}>
             <img src={PlayStore} alt="playStore" className="storeImg" />
             <img src={AppleStore} alt="appleStore" className="storeImg" />

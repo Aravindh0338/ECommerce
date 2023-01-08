@@ -1,0 +1,89 @@
+.productName{
+   
+    font: normal normal normal 18px/24px Open Sans !important;
+    letter-spacing: 0px;
+    color: #415162;
+    text-transform: capitalize !important;
+    opacity: 1;
+}
+.farmName{
+    text-align: left;
+    font: normal normal normal 15px/20px Open Sans;
+    letter-spacing: 0px;
+    color: #6B7885;
+    opacity: 1;
+}
+.price{
+    font: normal normal normal 18px/24px Open Sans;
+    letter-spacing: 0px;
+    color: #415162;
+    opacity: 1;
+}
+.totalText{
+    font: normal normal 600 18px/24px Open Sans;
+    letter-spacing: 0px;
+    color: #415162;
+    opacity: 1;
+}
+.tblHeading{
+    font: normal normal 600 18px/24px Open Sans !important;
+    letter-spacing: 0px !important;
+    color: #415162 !important;
+    opacity: 1 !important;
+}
+.checkoutBtn{
+    background: #80B435 0% 0% no-repeat padding-box !important;
+    border: 1px solid #80B435 !important;
+    border-radius: 8px !important;
+    opacity: 1 !important;
+    font: normal normal normal 16px/22px Open Sans !important;
+    letter-spacing: 0px !important;
+    color: #FFFFFF !important;
+    width: 100%;
+}
+.tblGrid{
+    margin:30px 0 30px 0;
+}
+.tblHead{
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 8px 8px 0px 0px;
+    opacity: 1;
+}
+.tblWrapper{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 12px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+    
+}
+.checkoutBtn:hover{
+    background: #80B435 0% 0% no-repeat padding-box;
+}
+.cartWrapper{
+    width: 90%;
+    margin: 100px auto auto auto;
+}
+.clearBtnWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #80B435;
+    border: 1px solid #80B435;
+    border-radius: 8px;
+    opacity: 1;
+}
+.totalCount{
+    background-color: #fff;
+    width: 35px;
+    height: 100%;
+}
+.noOfCount{
+    text-align: center;
+    padding-top: 8px;
+}
+.emptyCart{
+    font: normal normal 600 26px/36px Open Sans;
+letter-spacing: 0px;
+color: #415162;
+opacity: 1;
+}

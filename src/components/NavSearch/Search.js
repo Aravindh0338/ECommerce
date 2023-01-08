@@ -1,3 +1,4 @@
+import React from "react";
 import { MenuItem, TextField, InputAdornment, Typography } from "@mui/material";
 import "./Search.css";
 import SearchIcon from "@mui/icons-material/Search";

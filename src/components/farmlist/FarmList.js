@@ -11,27 +11,24 @@ import "./FarmList.css";
 
 function FarmList() {
   const [state, setState] = useState();
-  const [name, setName] = useState();
+
   const apiCall = async () => {
     let response;
     response = await fetch(process.env.REACT_APP_Farm);
     setState(response);
-    // console.log("State", response);
   };
+  console.log(state);
   useEffect(() => {
     apiCall();
   }, []);
-  const { data, updateValue, deleteValue } = useContext(FarmFilter);
-  // const show = (arg) => {
-  //   console.log("arg", arg);
-  // };
-  // console.log(state);
+  const { data, onClose } = useContext(FarmFilter);
+
   return (
     <Grid className="farmListWrapper">
       <img src={FarmHero} alt="FarmHero" className="FarmHeroImg" />
       <Grid container md={12} xs={12} sm={12} className="sideNavFarmWrapper">
         <Grid className="boxShadow" md={2} xs={12} sm={12}>
-          <SideNav name={name} />
+          <SideNav />
         </Grid>
         <Grid md={10} className="farmWrapper" xs={12} sm={12}>
           <Grid className="headingWrapper">
@@ -53,10 +50,10 @@ function FarmList() {
                         <span className="checkedfilter">{d}</span>
 
                         <img
+                          data-testId="oncloseBtn"
                           className="closeBtnImg"
                           onClick={() => {
-                            deleteValue(d);
-                            setName(d);
+                            onClose(d);
                           }}
                           src={Close}
                           alt="close"

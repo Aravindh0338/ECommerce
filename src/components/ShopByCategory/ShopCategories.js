@@ -1,11 +1,16 @@
 import { Typography, Grid, Button, Modal, Box } from "@mui/material";
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ShowProduct } from "../../contexts/EnableProduct/ShowProduct";
 import "./ShopCategories.css";
 function ShopCategories() {
   const { data, setData } = useContext(ShowProduct);
+  const style = {
+    textDecoration: "none",
+  };
   return (
     <Modal
+      data-testId="modal"
       open={data}
       onClose={() => {
         setData(false);
@@ -153,9 +158,17 @@ function ShopCategories() {
           justifyContent="center"
           backgroundColor="#80B435"
         >
-          <Button variant="text" className="viewAllCategoriesBtn">
-            View All Categories
-          </Button>
+          <Link data-testId="category" style={style} to="/categories">
+            <Button
+              data-TestId="button"
+              onClick={() => setData(false)}
+              variant="text"
+              fullWidth="true"
+              className="viewAllCategoriesBtn"
+            >
+              View All Categories
+            </Button>
+          </Link>
         </Grid>
       </Box>
     </Modal>

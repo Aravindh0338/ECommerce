@@ -39,7 +39,7 @@
   width: 10px;
   height: 10px;
   margin-left: 5px;
- 
+ cursor: pointer;
 }
 .checkedfilter{
   text-align: left;
@@ -54,6 +54,7 @@
   border-radius: 4px;
   opacity: 1;
   padding: 3px;
+  margin-right: 5px;
 }
 .farmWrapper{
   padding: 20px;

@@ -8,8 +8,11 @@
     "location": "From Joseph Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "500g",
-    "kd": "000.000KD",
-    "discount": "50% Off"
+    "oldValue":"13.330 KD",
+    "kd": "10.605KD",
+    "discount": "50% Off",
+    "oldRate":13.330,
+    "rate":10.605
   },
   {
     "id": 2,
@@ -18,8 +21,11 @@
     "location": "From Martha's Fresh Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "1kg",
+    "oldValue":"",
     "kd": "3.30KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":"",
+    "rate":3.30
   },
   {
     "id": 3,
@@ -28,8 +34,11 @@
     "location": "From Gorge Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "2L",
+    "oldValue":"1.5 KD",
     "kd": "0.90KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":1.5,
+    "rate":0.90
   },
   {
     "id": 4,
@@ -38,8 +47,11 @@
     "location": "From Martha's Fresh Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "12pcs",
+    "oldValue":"",
     "kd": "2.15KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":"",
+    "rate":2.15
   },
   {
     "id": 5,
@@ -48,8 +60,11 @@
     "location": "From Gorge Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "1kg",
+    "oldValue":"",
     "kd": "10.605 KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":"",
+    "rate":10.605
   },
   {
     "id": 6,
@@ -58,8 +73,11 @@
     "location": "From Gorge Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "24 pcs",
+    "oldValue":"13.330 KD",
     "kd": "2.15KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":13.330,
+    "rate":2.15
   },
   {
     "id": 7,
@@ -68,8 +86,11 @@
     "location": "From Mathew Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "500g",
+    "oldValue":"",
     "kd": "2.15KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":"",
+    "rate":2.15
   },
   {
     "id": 8,
@@ -78,8 +99,11 @@
     "location": "From Joseph Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "6 pcs",
+    "oldValue":"1.209 KD",
     "kd": "0.0645KD",
-    "discount": "50% Off"
+    "discount": "50% Off",
+    "oldRate":1.209,
+    "rate":0.0645
   },
   {
     "id": 9,
@@ -88,8 +112,11 @@
     "location": "From Joseph Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "2 Kg",
+    "oldValue":"",
     "kd": "2.15 KD",
-    "discount": "10% Off"
+    "discount": "10% Off",
+    "oldRate":"",
+    "rate":2.15
   },
   {
     "id": 10,
@@ -98,8 +125,11 @@
     "location": "From Martha's Fresh Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "1.5 Kg",
+    "oldValue":"",
     "kd": "3 KD",
-    "discount": "BOGO"
+    "discount": "BOGO",
+    "oldRate":"",
+    "rate":3
   },
   {
     "id": 11,
@@ -108,8 +138,76 @@
     "location": "From Joseph Farm",
     "des": "Lorem ipsum is simply dummy text of the print and type setting more",
     "weight": "1 Kg",
+    "oldValue":"",
     "kd": "3.30 KD",
-    "discount": "20% Off"
+    "discount": "20% Off",
+    "oldRate":"",
+    "rate":3.30
+  },
+  {
+    "id": 12,
+    "image": "CowMilk.png",
+    "name": "Calcium Cow Milk(Organic)",
+    "location": "From Al-Orgo Farm",
+    "des": "Lorem ipsum is simply dummy text of the print and type setting more",
+    "weight": "2 L",
+    "oldValue":"1.5 KD",
+    "kd": "0.90 KD",
+    "discount": "40% Off",
+    "oldRate":1.5,
+    "rate":0.90
+  },
+  {
+    "id": 13,
+    "image": "Laban.png",
+    "name": "Laban",
+    "location": "From Gorge Farm",
+    "des": "Lorem ipsum is simply dummy text of the print and type setting more",
+    "weight": "1 L",
+    "oldValue":"",
+    "kd": "3 KD",
+    "discount": "BOGO",
+    "oldRate":"",
+    "rate":3
+  },
+  {
+    "id": 14,
+    "image": "Margarine.png",
+    "name": "Laban",
+    "location": "From Gorge Farm",
+    "des": "Lorem ipsum is simply dummy text of the print and type setting more",
+    "weight": "1 L",
+    "oldValue":"3.30 KD",
+    "kd": "1.65 KD",
+    "discount": "BOGO",
+    "oldRate":3.30,
+    "rate":1.65
+  },
+  {
+    "id": 15,
+    "image": "flower.png",
+    "name": "Winter Flower Aster (Mixed Colors)",
+    "location": "From Joseph Farm",
+    "des": "Lorem ipsum is simply dummy text of the print and type setting more",
+    "weight": "2 Kg",
+    "oldValue":"13.330 KD",
+    "kd": "10.605 KD",
+    "discount": "10% Off",
+    "oldRate":13.330,
+    "rate":10.605
+  },
+  {
+    "id": 16,
+    "image": "Seasonings.png",
+    "name": "Seasonings-Pack of 4",
+    "location": "From Al-Orgo Farm",
+    "des": "Lorem ipsum is simply dummy text of the print and type setting more",
+    "weight": "100 g",
+    "oldValue":"1.209 KD",
+    "kd": "0.6045 KD",
+    "discount": "5% Off",
+    "oldRate":1.209,
+    "rate":0.6045
   }
 ]
 }

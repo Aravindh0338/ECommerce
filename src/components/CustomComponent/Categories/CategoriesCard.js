@@ -4,9 +4,10 @@ import "./CategoriesCard.css";
 
 function CategoriesCard({ name, image }) {
   return (
-    <Grid md={2} className="card">
+    <Grid data-testid="categoryComponent" md={2} className="card">
       <img
         src={`${process.env.REACT_APP_Website}${image}`}
+        // src={image}
         className="categoiesFood"
         alt="food"
       />

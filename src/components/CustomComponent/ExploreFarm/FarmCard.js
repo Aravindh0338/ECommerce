@@ -2,11 +2,12 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import "./FarmCard.css";
 
-function FarmCard({ image, name }) {
+const FarmCard = ({ image, name }) => {
   return (
     <Grid md={3} container flexDirection="column" alignItems="center">
       <img
-        src={`http://localhost:3000/images/${image}`}
+        data-testId="farmLogo"
+        src={`${process.env.REACT_APP_Website}/${image}`}
         // src={image}
         className="farmImage"
         alt="farm"
@@ -16,6 +17,6 @@ function FarmCard({ image, name }) {
       </Typography>
     </Grid>
   );
-}
+};
 
 export default FarmCard;
